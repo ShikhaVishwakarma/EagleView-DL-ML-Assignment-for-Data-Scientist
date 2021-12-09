@@ -15,9 +15,9 @@ I am going to do like a typical two hidden layer dense neural network. Since it'
 Now, I'll fit model.fit and then pass in train images and validation images. I specify the number of epochs we don't have to say the batch size since we declared that in the generators so it's trained for 100 epochs and i'll use the early stopping callback so early stopping will look at the validation loss.
 
 ## Result
-I'll display the loss value to five decimal places format that with results sub zero the first value returned by model.evaluate will be the loss and the second value will be the accuracy so model results sub zero will be the loss. For the esimation of accuracy the same thing will be done. Model.predict will return the probability estimation for the person being in the image.
-Loss and Accuracy: The model gains 0.6932 of loss and 50.67% accuracy on the test data.
-Confusion Matrix: The rows represent actual and the columns represent predicted images of the dataset.
-Recall: car's recall comes out to be 0 and person's comes out to be 1 that means out of all the actuall images of the person 100% images have been detected correctly.
-Precision: This model predicts the person's image with 51% precision.
-f1 score: The model predicts the person's images with 0.67 f1-score.
+I'll display the loss value to five decimal places format that with results sub zero the first value returned by model.evaluate will be the loss and the second value will be the accuracy so model results sub zero will be the loss. For the esimation of accuracy the same thing will be done. Model.predict will return the probability estimation for the person being in the image.\\
+Loss and Accuracy: The model gains 0.6932 of loss and 50.67% accuracy on the test data.\\
+Confusion Matrix: The rows represent actual and the columns represent predicted images of the dataset.\\
+Recall: car's recall comes out to be 0 and person's comes out to be 1 that means out of all the actuall images of the person 100% images have been detected correctly.\\
+Precision: This model predicts the person's image with 51% precision.\\
+f1 score: The model predicts the person's images with 0.67 f1-score.\\
