@@ -15,8 +15,13 @@ I am going to do like a typical two hidden layer dense neural network. Since it'
 Now, I'll fit model.fit and then pass in train images and validation images. I specify the number of epochs we don't have to say the batch size since we declared that in the generators so it's trained for 100 epochs and i'll use the early stopping callback so early stopping will look at the validation loss.
 
 ## Result
-I'll display the loss value to five decimal places format that with results sub zero the first value returned by model.evaluate will be the loss and the second value will be the accuracy so model results sub zero will be the loss. For the esimation of accuracy the same thing will be done. Model.predict will return the probability estimation for the person being in the image.  Loss and Accuracy: The model gains 0.6932 of loss and 50.67% accuracy on the test data.<br>
-Confusion Matrix: The rows represent actual and the columns represent predicted images of the dataset.<br>
-Recall: car's recall comes out to be 0 and person's comes out to be 1 that means out of all the actuall images of the person 100% images have been detected correctly.<br>
-Precision: This model predicts the person's image with 51% precision.<br>
-f1 score: The model predicts the person's images with 0.67 f1-score.<br>
+I'll display the loss value to five decimal places format that with results. The first value returned by model.evaluate will be the loss and the second value will be the accuracy.For the esimation of accuracy the same thing will be done. Model.predict will return the probability estimation for the person being in the image.<br>  Loss and Accuracy: The model gains 0.69311 of loss and 50.22% accuracy on the test data.<br>
+Confusion Matrix: The matrix containing correct and incorrect predictions in the form of true positives, false positives, false negatives and true negatives is called as "Confusion matrix". The rows represent actual and the columns represent predicted images of the dataset.<br>
+True negative | 8
+False negative| 10
+True positive | 217
+False positive| 213 <br>
+Recall: Recall indicates the proportion of correct predictionof positives to the total number of positives.<br>
+Recall=TP/(TP+FN). Car's recall comes out to be 40% i.e. out of all car's images 40% were predicted correctly and person's comes out to be 96% that means out of all the actuall images of the person 96% images have been detected correctly.<br>
+Precision: Precision indicates the reliability of a model in predicting a class of interest. This model predicts the person's image with 50% precision and the cars's images with 44% of precision.<br>
+f1 score: The f1-score is the harmonic mean of precision and recall. The model predicts the person's images with 0.66 and the car's images with 0.07 of f1-score.<br>
